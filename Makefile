@@ -12,6 +12,6 @@ init-db:
 
 
 open_postgres:
-
+	docker exec -it dockergobeckendcourse psql -U root
 
 .PHONY: postgres createdb dropdb init-db
